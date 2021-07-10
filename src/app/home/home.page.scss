@@ -1,12 +1,36 @@
 #container {
   text-align: center;
-
+  margin: 0 auto;
   position: absolute;
   left: 0;
+  max-width: 50%;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
 }
+
+.formulario {
+  display: flex;
+  justify-content: center;
+
+  ion-input {
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--ion-color-secondary);
+    border-radius: 16px;
+
+
+    transition: all .5s ease-in;
+
+    .danger {
+      border-color: var(--ion-color-danger);
+      border-width: 2px;
+      color: var(--ion-color-danger);
+    }
+  }
+
+}
+
 
 #container strong {
   font-size: 20px;
